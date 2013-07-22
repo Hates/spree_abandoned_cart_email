@@ -2,4 +2,4 @@ en:
   spree:
     abandoned_cart:
       email: 
-        subject: "You have items in your shopping cart!"
+        subject: "There are still items in your shopping cart!"

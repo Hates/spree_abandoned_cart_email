@@ -15,10 +15,19 @@ Override the email view to customise:
 app/views/spree/abandoned_cart_mailer/abandoned_email.html.erb
 ```
 
-##ToDo
+Create a rake task to send the email:
 
-- Rake task
-- Cronjob instructions
+```
+desc "Abandoned cart emails"
+task send_abandond_cart_emails: environment do
+  Spree::Order.self.email_eligible_abandoned_email_orders
+end
+```
+Create a cronjob to run every so often to send the emails:
+
+```
+0 * * * * /bin/bash -l -c 'cd {your_application_home} && RAILS_ENV=production rake send_abandoned_cart_emails 2>&1'
+```
 
 ##Installation
 
