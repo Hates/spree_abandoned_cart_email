@@ -15,6 +15,11 @@ Override the email view to customise:
 app/views/spree/abandoned_cart_mailer/abandoned_email.html.erb
 ```
 
+##ToDo
+
+- Rake task
+- Cronjob instructions
+
 ##Installation
 
 Add spree_abandoned_cart_email to your Gemfile:
