@@ -19,7 +19,7 @@ Create a rake task to send the email:
 
 ```
 desc "Abandoned cart emails"
-task send_abandond_cart_emails: environment do
+task send_abandond_cart_emails: :environment do
   Spree::Order.self.email_eligible_abandoned_email_orders
 end
 ```
