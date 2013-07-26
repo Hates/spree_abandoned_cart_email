@@ -2,7 +2,7 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_abandoned_cart_email'
-  s.version     = '0.0.1'
+  s.version     = '0.0.2'
   s.summary     = 'Abandoned cart email'
   s.description = 'Abandoned cart email'
   s.required_ruby_version = '>= 1.9.3'

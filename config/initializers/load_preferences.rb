@@ -1,5 +1,5 @@
 module Spree
-  module AbandonedCartEmail
+  module AbandonedCartEmailConfig
     Config = Spree::AbandonedCartEmailConfiguration.new
   end
 end

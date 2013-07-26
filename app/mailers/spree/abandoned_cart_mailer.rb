@@ -1,6 +1,6 @@
 module Spree
   class AbandonedCartMailer < ActionMailer::Base
-    default from: Spree::AbandonedCartEmail::Config.email_from
+    default from: Spree::AbandonedCartEmailConfig::Config.email_from
 
      def abandoned_email(order)
        @order = order
