@@ -125,7 +125,7 @@
                             <% variant = line_item.variant %>
                             <tr>
                               <td class="cart-item-description" data-hook="cart_item_description">
-                                <strong><%= link_to variant.product.name, product_path(variant.product) %></strong>
+                                <strong><%= link_to variant.product.name, spree.product_url(variant.product) %></strong>
                               </td>
                             </tr>
                           <% end %>
