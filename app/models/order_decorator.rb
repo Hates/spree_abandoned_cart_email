@@ -16,7 +16,7 @@ Spree::Order.class_eval do
             AND created_at < ?",
           "complete",
           "paid",
-          (Time.zone.now - Spree::AbandonedCartEmailConfig::Config.email_timeframe))
+          (Time.zone.now - Spree::AbandonedCartEmailConfig::Config.email_timeframe)).joins(:line_items).distinct
   end
 
   def send_abandoned_email
